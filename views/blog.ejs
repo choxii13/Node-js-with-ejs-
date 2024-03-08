@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <%- include("include/head") %>
+    <link rel="stylesheet" href="/styles/blog.css" />
+</head>
+
+<body>
+  <%- include("include/header-aside") %>
+    <main>
+      <h1>List of Blogs</h1>
+      <ul id="blog-list">
+        <% if(storedBlogs.length===0) { %>
+          <h2> No Data </h2>
+          <% } %>
+            <% for (const blog of storedBlogs) {%>
+              <%- include('include/blog/blog-detail', {blog}) %>
+                <% } %>
+      </ul>
+    </main>
+</body>
+
+</html>

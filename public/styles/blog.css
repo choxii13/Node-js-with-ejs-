@@ -1,0 +1,56 @@
+main {
+  max-width: 40rem;
+}
+
+#blog-list {
+  list-style: none;
+  margin: 2rem 0;
+  padding: 0;
+}
+
+.blog-item {
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 4px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  background-color: rgb(237, 235, 231);
+  color: rgb(0, 0, 0);
+  text-align: left;
+}
+
+.blog-item h2 {
+  font-family: "Roboto Condensed", "Roboto", sans-serif;
+  font-size: 1.25rem;
+  margin: 0.25rem 0;
+}
+
+.blog-item p {
+  margin: 0.2rem 0;
+  color: rgb(38, 38, 38);
+}
+
+.blog-meta {
+  margin-bottom: 0.5rem;
+}
+
+.blog-meta p {
+  color: rgb(62, 62, 62);
+}
+
+.blog-actions {
+  margin-top: 1rem;
+  text-align: right;
+}
+
+.blog-actions a {
+  padding: 0.5rem 1.5rem;
+  background-color: rgb(0, 0, 0);
+  border-radius: 4px;
+  color: white;
+  text-decoration: none;
+}
+
+.blog-actions a:hover,
+.blog-actions a:active {
+  background-color: rgb(26, 25, 25);
+}

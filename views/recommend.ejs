@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <%- include("include/head") %>
+    <link rel="stylesheet" href="/styles/recommend.css" />
+</head>
+
+<body>
+  <%- include("include/header-aside") %>
+    <main>
+      <h1> Create your own Blog!</h1>
+      <form action="/recommend" method="POST">
+        <div class="form-control">
+          <label for="title">Blog Title</label>
+          <input type="text" id="title" name="title" required />
+        </div>
+        <div class="form-control">
+          <label for="author">Author Name</label>
+          <input type="text" id="author" name="author" required />
+        </div>
+
+        <div class="form-control">
+          <label for="website">Recommended Website</label>
+          <input type="url" id="website" name="website" />
+        </div>
+        <div class="form-control">
+          <label for="description">Blog content</label>
+          <textarea name="description" id="description" rows="5" required></textarea>
+        </div>
+        <button>Share your Blog</button>
+      </form>
+    </main>
+</body>
+
+</html>
