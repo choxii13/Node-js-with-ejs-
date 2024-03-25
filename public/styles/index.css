@@ -18,16 +18,13 @@ main ul {
 }
 
 main li {
-  width: 20rem;
+  margin: auto;
+  width: 10rem;
   height: 10rem;
-  border-radius: 6px;
-  margin: 0 1rem;
-  overflow: hidden;
+  border-radius: 10px;
 }
 
 main li a {
-  height: 100%;
-  width: 100%;
   display: flex;
   background-color: rgb(3, 3, 3);
   justify-content: center;
@@ -37,9 +34,4 @@ main li a {
   font-size: 1.25rem;
   padding: 1rem;
   box-sizing: border-box;
-}
-
-main li a:hover,
-main li a:active {
-  background-color: rgb(109, 109, 109);
 }
